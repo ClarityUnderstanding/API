@@ -1,0 +1,14 @@
+import requests
+import json
+
+response = requests.post("https://jsonplaceholder.typicode.com/posts", data ={'somekey': 'somevalue'})
+print(response.json())
+
+# More modular way of writing the same code
+#url = 'https://jsonplaceholder.typicode.com/posts/'
+#my_obj = {'somekey': 'somevalue'}
+#response = requests.post(url, data = my_obj)
+#print(x.text)
+
+# More info on parameters for POST
+# https://www.w3schools.com/python/ref_requests_post.asp
